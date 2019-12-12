@@ -1,12 +1,14 @@
+#container {
+  text-align: center;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
   margin: 3rem;
 }
 
 p {
-  text-align: center;
   font-size: 1.25rem;
   font-weight: bold;
 }
@@ -15,6 +17,10 @@ p {
   margin: 1rem;
   font-size: 3rem;
   font-weight: bold;
-  text-align: center;
   color: rgb(255, 75, 0);
+}
+
+iframe {
+  display: block;
+  margin: 2rem auto;
 }
