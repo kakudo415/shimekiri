@@ -1,5 +1,17 @@
 const countDownBox = document.getElementById("count-down-box");
-const deadlineTimeStamp = new Date(2020, 11, 15, 23, 59, 59, 999).getTime();
+const deadlineMessage = document.getElementById("deadline-message");
+const deadlineTime = new Date();
+deadlineTime.setMonth(11);
+deadlineTime.setDate(15);
+deadlineTime.setHours(23);
+deadlineTime.setMinutes(59);
+deadlineTime.setSeconds(59);
+deadlineTime.setMilliseconds(999);
+if ((new Date).getTime() > deadlineTime.getTime()) {
+  deadlineTime.setFullYear(deadlineTime.getFullYear() + 1);
+}
+const deadlineTimeStamp = deadlineTime.getTime();
+deadlineMessage.innerText = `${deadlineTime.getFullYear()}年 レポート締め切り12月15日まで`;
 
 const timeStampDifference = () => {
   const nowTimeStamp = (new Date()).getTime();
