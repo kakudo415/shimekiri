@@ -1,5 +1,5 @@
 const countDownBox = document.getElementById("count-down-box");
-const deadlineTimeStamp = new Date(2019, 11, 15, 23, 59, 59, 999).getTime();
+const deadlineTimeStamp = new Date(2020, 11, 15, 23, 59, 59, 999).getTime();
 
 const timeStampDifference = () => {
   const nowTimeStamp = (new Date()).getTime();
